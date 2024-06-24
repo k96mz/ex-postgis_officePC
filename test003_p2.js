@@ -103,6 +103,7 @@ const doQuery = async () => {
     );
     let rows;
     let features = [];
+    // ここにfeaturesがあると、featuresはリセットされることなく増え続ける
 
     try {
       do {

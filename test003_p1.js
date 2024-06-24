@@ -46,7 +46,7 @@ const fetch = (client, database, view) => {
         console.log(f);
         if (f) features.push(f);
         console.log('featuresの表示');
-        // console.log(feature);
+        // console.log(features);
       })
       .on('error', err => {
         console.error(err.stack);
@@ -74,6 +74,7 @@ const doQuery = async () => {
   try {
     const sqlForColumn = `SELECT column_name FROM information_schema.columns WHERE table_schema = '${schema}' AND table_name = '${view}' ORDER BY ordinal_position`;
     const colForColumn = await client.query(sqlForColumn);
+    console.log('------------------------------');
     console.log(colForColumn.rows);
     // baea_nestsテーブルで使用されているcolumnsを取得
 
