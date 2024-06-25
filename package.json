@@ -18,13 +18,16 @@
   },
   "homepage": "https://github.com/ubukawa/ex-postgis#readme",
   "dependencies": {
+    "better-queue": "^3.8.12",
     "child_process": "^1.0.2",
     "cli-spinner": "^0.2.10",
     "config": "^3.3.8",
     "fs": "^0.0.1-security",
+    "hh-mm-ss": "^1.2.0",
     "hjson": "^3.2.2",
     "pg": "^8.8.0",
     "pg-cursor": "^2.11.0",
+    "prettysize": "^2.0.0",
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0"
   }

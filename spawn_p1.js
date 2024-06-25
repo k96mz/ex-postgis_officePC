@@ -1,10 +1,12 @@
 const { spawn } = require('child_process');
 
+/*
 // PowerShellコマンドを実行
 const ls = spawn('powershell.exe', [
   '-Command',
   'Get-ChildItem',
-  'C:\\Users\\astro\\Documents\\GitHub\\ex-postgis_officePC',
+  // 'C:\\Users\\astro\\Documents\\GitHub\\ex-postgis_officePC',
+  'C:\\Users\\Koji.Osumi\\Desktop\\Practice\\ex-postgis_officePC',
 ]);
 
 // 標準出力を監視
@@ -26,3 +28,4 @@ ls.on('close', code => {
 ls.on('error', err => {
   console.error(`Failed to start subprocess: ${err.message}`);
 });
+*/
