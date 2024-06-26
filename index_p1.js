@@ -243,7 +243,7 @@ const shutdown = () => {
 // main
 const main = async () => {
   winston.info(`${iso()}: clearmap production started.`);
-  queueTasks();
+  // queueTasks();
   queue.on('drain', () => {
     shutdown();
   });

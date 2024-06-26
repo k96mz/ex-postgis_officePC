@@ -1,0 +1,34 @@
+{
+    host: localhost
+    port: 5432
+    dbUser: postgres
+    dbPassword: password
+    relations:[
+        sdb_course::public::baea_nests
+        sdb_course::public::linear_projects
+//        data_base::schema::viewOrTable2
+    ]
+    connection:{
+        sdb_course:{
+            host: localhost
+            port: 5432
+            dbUser: postgres
+            dbPassword: password
+        }
+        osm_planet:{
+            host: localhost
+            port: 5432
+            dbUser: user
+            dbPassword: password
+        }        
+    }
+
+    fetchSize: 10
+//    outTextDir: outTextDir
+    outputDir: outputDir_produce-cmv
+    tippecanoePath: tippecanoe
+    spinnerString: 1
+    logDir: log
+    pmtilesDir: pmtiles
+
+}
